@@ -21,8 +21,29 @@
             line-height: 1.6;
         }
 
+        nav {
+            background: #000;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover { color: var(--primary); }
+
         header {
-            height: 60vh;
+            height: 65vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -31,22 +52,24 @@
             background-size: cover;
             background-position: center;
             text-align: center;
-            border-bottom: 4px solid var(--primary);
         }
 
-        .studio-name {
+        .studio-name { font-weight: bold; letter-spacing: 3px; color: var(--primary); text-transform: uppercase; }
+        h1 { font-size: 3.5rem; margin: 10px 0; text-transform: uppercase; }
+        
+        .btn-main {
+            background: var(--primary);
+            color: black;
+            padding: 15px 30px;
+            text-decoration: none;
             font-weight: bold;
-            letter-spacing: 3px;
-            color: var(--primary);
-            margin-bottom: 5px;
-            text-transform: uppercase;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: 0.3s;
         }
-
-        h1 { font-size: 3.5rem; margin: 10px 0; text-transform: uppercase; letter-spacing: 2px; }
-        p.subtitle { font-size: 1.2rem; opacity: 0.8; font-style: italic; }
+        .btn-main:hover { background: white; transform: translateY(-3px); }
 
         .container { max-width: 900px; margin: -50px auto 50px; padding: 20px; }
-
         .card {
             background: var(--card);
             padding: 30px;
@@ -56,80 +79,55 @@
             border-left: 5px solid var(--primary);
         }
 
-        .status-badge {
-            background: var(--accent);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 0.8rem;
-            display: inline-block;
-            margin-bottom: 15px;
-        }
-
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-
         h2, h3 { color: var(--primary); }
-
         ul { list-style: none; padding: 0; }
         li { margin-bottom: 10px; display: flex; align-items: center; }
         li::before { content: "📦"; margin-right: 10px; }
 
-        footer { 
-            text-align: center; 
-            padding: 60px 20px; 
-            background: #0a0a0a;
-            margin-top: 50px;
-        }
-
-        .footer-logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--primary);
-            margin-bottom: 10px;
-        }
-
+        footer { text-align: center; padding: 60px 20px; background: #0a0a0a; margin-top: 50px; }
         @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } h1 { font-size: 2.2rem; } }
     </style>
 </head>
 <body>
 
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+    </nav>
+
     <header>
         <div class="studio-name">Littendekitten Studios Presents</div>
-        <div class="status-badge">DEVELOPMENT PHASE: CONCEPT</div>
         <h1>Untitled Market Simulator</h1>
-        <p class="subtitle">Build your empire, one shelf at a time.</p>
+        <p>The ultimate retail management experience.</p>
+        <a href="download.html" class="btn-main">PLAY NOW</a>
     </header>
 
     <div class="container">
         <section class="card">
             <h2>The Vision</h2>
-            <p>Welcome to the official development hub. <strong>Untitled Market Simulator</strong> is a deep-dive into the world of retail management. Developed by <strong>Littendekitten Studios</strong> using the Godot Engine, we aim to bring a fresh perspective to the 3D tycoon genre.</p>
+            <p><strong>Untitled Market Simulator</strong> is a 3D tycoon game where you start with a small corner shop and grow it into a massive supermarket. Manage stock, set prices, and keep your customers happy.</p>
         </section>
 
         <div class="grid">
             <section class="card">
-                <h3>Core Mechanics</h3>
+                <h3>Features</h3>
                 <ul>
-                    <li>Advanced Stock Management</li>
-                    <li>NPC AI Behaviors</li>
-                    <li>Interior Design System</li>
-                    <li>Real-time Economy</li>
+                    <li>Realistic 3D Graphics</li>
+                    <li>Advanced AI Customers</li>
+                    <li>Stock Management</li>
                 </ul>
             </section>
-
             <section class="card">
-                <h3>Dev Roadmap</h3>
-                <p><strong>Early 2026:</strong> Core engine setup and 3D asset prototyping.</p>
-                <p><strong>Coming Soon:</strong> First playable tech-demo and alpha screenshots.</p>
+                <h3>Dev Status</h3>
+                <p>Currently in <strong>Pre-Alpha</strong>. Building the core interaction systems in Godot 4.</p>
             </section>
         </div>
     </div>
 
     <footer>
-        <div class="footer-logo">Littendekitten Studios</div>
-        <p>&copy; 2026 | All Rights Reserved</p>
-        <p style="font-size: 0.8rem; opacity: 0.5;">Made with passion for the Godot Community</p>
+        <div style="font-size: 1.5rem; font-weight: bold; color: var(--primary);">Littendekitten Studios</div>
+        <p>&copy; 2026 | Built for Godot</p>
     </footer>
 
 </body>
