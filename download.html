@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download | Untitled Market Simulator</title>
+    <style>
+        :root {
+            --primary: #f39c12;
+            --bg: #121212;
+            --card: #1e1e1e;
+            --text: #ffffff;
+            --accent: #27ae60;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        nav {
+            background: #000;
+            padding: 15px 0;
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a:hover { color: var(--primary); }
+
+        .content {
+            flex: 1;
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 { color: var(--primary); font-size: 3rem; margin-bottom: 10px; }
+
+        .download-box {
+            background: var(--card);
+            padding: 50px;
+            border-radius: 20px;
+            border: 2px solid var(--primary);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+        }
+
+        .btn {
+            display: block;
+            background: var(--accent);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin: 20px 0;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background: #2ecc71; transform: scale(1.02); }
+        .btn.linux { background: #34495e; font-size: 1rem; }
+
+        .specs {
+            text-align: left;
+            background: rgba(255,255,255,0.05);
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        footer { text-align: center; padding: 40px; opacity: 0.5; background: #0a0a0a; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="download.html" style="color: var(--primary);">Download</a>
+    </nav>
+
+    <div class="content">
+        <h1>Get the Game</h1>
+        <p style="margin-bottom: 40px; opacity: 0.7;">Experience the first build from Littendekitten Studios.</p>
+        
+        <div class="download-box">
+            <div style="font-size: 5rem; margin-bottom: 10px;">📦</div>
+            <h2>Version 0.1 (Alpha)</h2>
+            <p>Windows 64-bit Edition</p>
+            
+            <a href="#" class="btn">DOWNLOAD FOR WINDOWS</a>
+            <a href="#" class="btn linux">Download for Linux (.x86_64)</a>
+            
+            <p style="font-size: 0.8rem; opacity: 0.5; margin-top: 20px;">
+                File size: ~45MB | Build: 2026-04-02
+            </p>
+        </div>
+
+        <div class="specs">
+            <h3 style="color: var(--primary);">System Requirements</h3>
+            <p><strong>Minimum:</strong> Dual Core CPU, 4GB RAM, Vulkan-capable GPU.</p>
+            <p><strong>Note:</strong> This is a development build. Please report bugs to Littendekitten Studios.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Littendekitten Studios
+    </footer>
+
+</body>
+</html>
