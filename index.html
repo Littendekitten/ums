@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled Market Simulator | Official Site</title>
+    <style>
+        :root {
+            --primary: #f39c12;
+            --bg: #121212;
+            --card: #1e1e1e;
+            --text: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1534723452862-4c874018d66d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        h1 { font-size: 3.5rem; margin-bottom: 10px; color: var(--primary); text-transform: uppercase; letter-spacing: 2px; }
+        p.subtitle { font-size: 1.2rem; opacity: 0.8; }
+
+        .container { max-width: 900px; margin: -50px auto 50px; padding: 20px; }
+
+        .card {
+            background: var(--card);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 20px;
+        }
+
+        .status-badge {
+            background: var(--primary);
+            color: black;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 10px; display: flex; align-items: center; }
+        li::before { content: "🛒"; margin-right: 10px; }
+
+        footer { text-align: center; padding: 40px; opacity: 0.5; font-size: 0.9rem; }
+
+        @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } h1 { font-size: 2rem; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="status-badge">DEVELOPMENT PHASE: CONCEPT</div>
+        <h1>Untitled Market Simulator</h1>
+        <p class="subtitle">Build your empire, one shelf at a time.</p>
+    </header>
+
+    <div class="container">
+        <section class="card">
+            <h2>About the Game</h2>
+            <p>Welcome to the early development home of <strong>Untitled Market Simulator</strong>. This is a 3D management simulation built in the Godot Engine where you take control of a local shop and turn it into a retail powerhouse.</p>
+        </section>
+
+        <div class="grid">
+            <section class="card">
+                <h3>Planned Features</h3>
+                <ul>
+                    <li>Realistic Inventory System</li>
+                    <li>Dynamic Customer AI</li>
+                    <li>Store Customization</li>
+                    <li>Economic Challenges</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h3>Development Log</h3>
+                <p><strong>April 2026:</strong> Started the project! Currently planning the core mechanics and setting up the GitHub repository.</p>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Untitled Market Simulator Dev | Built with ❤️ & Godot
+    </footer>
+
+</body>
+</html>
